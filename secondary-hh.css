@@ -1,0 +1,356 @@
+/* Styling for Program Listing */
+.center-text { text-align: center; }
+
+.program-box {
+    float: left;
+    height: 352px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.program-box .thumbnail {
+    width: 100%;
+    height: 162px;
+    margin-bottom: 20px;
+}
+
+.program-box img {
+    width: 294px;
+    height: 162px;
+}
+
+.program-box .title {
+    font-family: "Museo Sans W01_900", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.program-box .description {
+    max-height: 85px;
+    overflow: scroll;
+}
+
+.program-box .description,
+.program-box a {
+    display: block;
+    margin:10px 0;
+}
+
+.program-box a {
+    text-transform: uppercase;
+}
+
+/* Supplemental Styling for Wide Tier and Right Rail */
+/*.container-style-prominent-top-image .content-block-img img,
+.container-style-prominent-two-col .content-block-img img,
+.container-style-prominent-left-image .content-block-img img {
+    height: 100% !important;
+    width: auto !important;
+    top: 0;
+}
+*/
+.container-style-specialized-callouts .content-block-img img {
+    height: 100% !important;
+    width: auto !important;
+    top: 0;
+}
+
+.half-width {
+    width: 50% !important;
+}
+
+.directorySelect {
+    height: 59px;
+    width: 385px;
+    border: 4px solid #7d7d7d;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #7d7d7d;
+    background-color: #fff;
+    padding-left:5px;
+}
+.directorySelect option {
+    padding-top:2px;
+    padding-bottom:2px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+/* News on RR */
+.news-block-taxonomy.repos {
+    top: initial;
+    left: initial;
+}
+
+.bg-blue    { background: #28adcd; }
+.bg-orange  { background: #f17021; }
+.bg-yellow  { background: #e3b41a; }
+.bg-violet  { background: #a81d76; }
+.bg-green   { background: #90bb39; }
+.bg-maroon  { background: #7f1416; }
+.bg-white   { background: #ffffff; }
+.bg-grey    { background: #7d7d7d; }
+
+
+/* Styling for Faculty Directory */
+.region.profile-banner {
+    border: 1px solid #e5e5e5;
+    margin-top: 20px;
+}
+.profile-banner .img-holder,
+.profile-banner .short-text {
+    padding: 15px;
+}
+.profile-banner .img-holder img {
+    height: 100%;
+    width: 100%;
+}
+
+.profile-banner .short-text p {
+    font-size: 24px;
+    font-style: italic;
+}
+.view-profile a.more {
+    padding-left:0 !important;
+}
+
+/* Campus Map */
+.preview {
+    display: block;
+	overflow: visible;
+	visibility: inherit;
+	z-index: 1;
+	min-width:200px;
+}
+.preview img{
+	max-width:35%;
+}
+.preview img.imageright {
+	float:right;
+	margin:6px 0 15px 10px;
+}
+.preview h2 {
+    font-weight:bold;
+    font-size:1.1em;
+    line-height:1.3em;
+    margin: 0;
+    margin-top:6px;
+}
+.preview > p, .preview > ul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+    margin:10px 0;
+}
+.preview-parking {
+	min-width: 200px;
+	white-space: normal;
+	display: block;
+	overflow: visible;
+	visibility: inherit;
+	z-index: 1;
+    }
+.preview-parking p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	max-width:95%;
+}
+.checkbox div {
+    margin-left:5px;
+}
+.checkbox label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 5px;
+	font-size: 13px;
+}
+.checkbox label {
+    font-size: .9em;
+    margin-left:3px;
+}
+.right-rail-module-content-holder #side_bar ul.square {
+    margin:0 auto;
+    /*padding:15px;*/
+}
+.right-rail-module-content-holder #side_bar ul.square li {
+    border-top: 1px solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.right-rail-module-content-holder #side_bar ul.square li:first-of-type {
+    border: none;
+}
+.right-rail-module-content #side_bar ul li a {
+    font-size:.8em;
+    display:block;
+    color:rgba(255,255,255,.5);
+}
+.right-rail-module-content #side_bar ul li a:hover {
+    color:rgba(255,255,255,1);
+
+}
+
+/* Overlays - RHIT */
+.circles::before,
+.dots::before,
+.graph::before,
+.hex::before,
+.triangle::before,
+.triangle-sm::before,
+.polar::before,
+.radial::before,
+.tripolar::before {
+    content:'';
+    display:block;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    opacity:.25;
+    z-index:1;
+}
+
+.circles-part::before,
+.dots-part::before,
+.graph-part::before,
+.hex-part::before,
+.triangle-part::before,
+.triangle-sm-part::before,
+.polar-part::before,
+.radial-part::before,
+.tripolar-part::before {
+    content:'';
+    display:block;
+    height:100%;
+    width:100%;
+    position:absolute;
+    opacity:.25;
+    z-index:1;
+}
+/* Full */
+.circles::before  { background:url("../images/overlay-images/circles-pattern.png") repeat-x; background-size:50%; }
+.dots::before     { background:url("../images/overlay-images/dots-pattern.png") repeat-x; background-size:100%;   }
+.graph::before    { background:url("../images/overlay-images/graph-pattern.png") repeat-x 50%; background-size:60%;   }
+.hex::before      { background:url("../images/overlay-images/hex-pattern.png") repeat-x; background-size:100%;    }
+.triangle::before { background:url("../images/overlay-images/triangle-pattern.png") repeat-x; opacity:.3; }
+.triangle-sm::before { background:url("../images/overlay-images/triangle-small-pattern.png") repeat-x; background-size:90%; }
+.polar::before    { background:url("../images/overlay-images/polar-grid-pattern.png") repeat-x 50%; background-size:100%; }
+.radial::before   { background:url("../images/overlay-images/radial-dots-pattern.png") repeat-x 50%; background-size:100%; }
+.tripolar::before { background:url("../images/overlay-images/tri-polar-grid-pattern.png") repeat-x 50%; background-size:135%; }
+
+/* Partials */
+.circles-part::before   {
+    background:url("../images/overlay-images/circles-pattern.png") no-repeat;
+    background-size:cover;
+    right: 0px;
+    width:30%;
+}
+.dots-part::before      {
+    background:url("../images/overlay-images/dots-pattern.png") no-repeat;
+    background-size:300%;
+    right:0px;
+    width:30%;
+}
+.graph-part::before     {
+    background:url("../images/overlay-images/graph-pattern.png") no-repeat center 100%;
+    background-size:125%;
+    bottom:0px;
+    height:28%;
+}
+.hex-part::before       {
+    background:url("../images/overlay-images/hex-pattern-partial.png");
+    bottom:0px;
+    height:80%;
+    right:0px;
+}
+.triangle-part::before  {
+    background:url("../images/overlay-images/triangle-pattern-partial.png");
+    background-size: 150%;
+    -webkit-transform: rotate(330deg);
+    -moz-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+    -o-transform: rotate(330deg);
+    transform: rotate(330deg);
+    right: -25%;
+}
+.triangle-sm-part::before {
+    background:url("../images/overlay-images/triangle-small-pattern-partial.png");
+    background-size: 150%;
+    right: -30%;
+    bottom: -15%;
+}
+.polar-part::before     {
+    background:url("../images/overlay-images/polar-grid-pattern-partial.png");
+    background-size: 50%;
+    background-position: 120% 225%;
+}
+.radial-part::before    {
+    background:url("../images/overlay-images/radial-dots-pattern-partial2.png" no-repeat);
+    background-size: 90%;
+    background-position: 150%;
+}
+.tripolar-part::before  {
+    background:url("../images/overlay-images/tri-polar-grid-pattern-partial.png" no-repeat;)
+    background-size: 120%;
+    right: -300px;
+}
+
+.disabled {
+        display:none;
+    }
+.pagePagination {
+    display: table;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+.pagePagination a {
+    border: 4px solid #7f1416;
+    color: #7f1416;
+    display: inline-block;
+    font-size: 24px;
+    min-width: 48px;
+    line-height: 40px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pagination span.active a,
+.pagination span a:hover,
+.pagination span a:focus {
+    border: 4px solid #7f1416 !important;
+    color: #fff;
+    text-decoration:none;
+    background-color: #7f1416 !important;
+    outline: none;
+
+}
+
+span.ng-scope a:first-child, span.ng-scope a:last-child {
+    padding: 0 15px;
+    font-size: 1em;
+}
+
+span.ng-scope.disabled:first-child, span.ng-scope.disabled:last-child  {
+    display: none;
+}
+
+input[type=text].filters{
+    width: 338px;
+    float: right;
+    background-image: url(//www.w3schools.com/howto/searchicon.png);
+    height: 59px;
+    border: 4px solid #7d7d7d;
+    margin-left: 8px;
+    font-size: 18px;
+    background-position: 295px 13px;
+    background-repeat: no-repeat;
+    padding: 8px 20px 10px 13px;
+}

@@ -1,0 +1,305 @@
+ul, ol {
+    padding-left:40px;
+}
+ol.la {
+    list-style-type:lower-alpha;
+}
+ol.ur {
+    list-style-type:upper-roman;
+}
+
+.program :target:before, .descriptions :target:before {
+	 height:auto !important;
+}
+#main .program a.anchor-offset, #main .descriptions a.anchor-offset {
+     display:block;
+	 position:relative;
+	 top:-90px;
+	 visibility:hidden;
+}
+
+.disabled {
+    display:hidden;
+}
+.accordionContainer:nth-child(4) {
+    margin-bottom:30px;
+}
+.accordionContainer:nth-child(5) {
+    padding-top: 30px;
+    border-top: 1px solid #dedede;
+}
+.studentYear {
+    padding:8px 15px;
+    background:#dedede;
+    font:bold 1.1em sans-serif;
+    border-radius:3px;
+    outline:none;
+    cursor:pointer;
+    position:relative;
+    margin-bottom:20px;
+}
+.studentYear:hover {
+    background:#bbb;
+    color:#fff;
+}
+.studentYear span {
+    font-weight:normal;
+    font-size:.85em;
+    line-height:.85em;
+    display:inline-block;
+
+}
+.primary-opener-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -19px;
+    right: 5px;
+    width: 38px;
+    height: 38px;
+    transition: 250ms all;
+}
+.primary-opener-icon .icon-plus, .primary-opener-icon .icon-minus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    transition: all 350ms ease-out;
+}
+.primary-opener-icon .icon-plus {
+    opacity: 1;
+    transform: rotate(0);
+}
+.primary-opener-icon .icon-minus {
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+.studentYear:hover .icon-plus {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+.studentYear:hover .icon-minus {
+    opacity: 1;
+    transform: rotate(0);
+}
+.studentYear.ui-state-active {
+    background:#bbb;
+}
+.accordionContainer.is-open .studentYear {
+    background:#bbb;
+    color:#fff;
+}
+.accordionContainer.is-open .studentYear .icon-plus {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+.accordionContainer.is-open .studentYear .icon-minus {
+    opacity: 1;
+    transform: rotate(0);
+}
+.studentTerm {
+     width:100%;
+     padding:4px 5px;
+     font-size:1.3em;
+     margin-top:20px;
+     margin-bottom:0;
+     border-bottom:1px solid #ccc;
+}
+.courseSequence {
+    width:100%;
+    margin:5px 10px 20px 10px;
+}
+
+.courseSequence tr th {
+    text-align:left;
+    padding:3px 5px;
+}
+.courseSequence tr th:last-child {
+    text-align:center;
+}
+.courseSequence tr td {
+    padding:3px 5px;
+    text-align:left;
+    font-size:0.9em;
+}
+.courseSequence tr td:first-child {
+    width:90%;
+}
+.courseSequence tr td:nth-child(2) {
+    text-align:center;
+}
+.courseSequence tr:last-child td {
+    text-align:right;
+    font-weight:bold;
+    padding:5px 10px 0 0;
+
+}
+.courseSequence tr:last-child td span {
+    display:inline-block;
+    border-top:1px solid #000;
+    padding:4px 14px;
+}
+.line {
+    display:block;
+    padding-bottom:10px;
+    border-bottom:1px solid #dedede;
+}
+.sequence-notes {
+    font-size:.85em;
+}
+.course h3 {
+    text-align:left;
+    font-size:28px;
+}
+.course a {
+    font-size:16px;
+}
+.course a.course-link {
+    font-size:18px;
+    display:block;
+    margin-bottom:10px;
+}
+
+.icon-arrow-down2 {
+   font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position:relative;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down2:before {
+  content: "\ea3e";
+  background: #fff;
+
+}
+.div-table {
+    width:100%;
+    float:left;
+}
+.div-table div {
+    float:left;
+    padding:25px;
+    border:2px solid #000;
+}
+.div-table div:last-of-type {
+    margin-left:-2px;
+}
+.div-table div p:last-of-type {
+    margin-bottom:0;
+}
+.div-table div:last-of-type:after {
+    content:"";
+    clear:left;
+    display:block;
+}
+
+.accordionContainer:last-of-type {
+    margin-bottom:15px;
+}
+
+.total-credits-required {
+    text-align:right;
+    font-size:1.2em;
+    border-top: 1px solid #dedede;
+    padding-top:2px;
+}
+
+.total-credits-required span {
+    font-weight:bold;
+    padding:5px;
+    background: #dedede;
+}
+
+/* ------------------ Program Listing ------------------ */
+
+
+.programs {
+    list-style-type: none;
+    font:bold 1.2em/1em sans-serif ;
+    margin-left:20px;
+}
+.programs li a {
+    display:block;
+    padding:10px 5px 10px 5px;
+}
+.program table td, .program table th {
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+}
+.program table th {
+    text-align: left;
+}
+.program table p {
+    margin:0;
+}
+.program-table td {
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+}
+.program-table p {
+    margin:0;
+}
+
+/* ------------------ Courses ------------------ */
+
+.program-title {
+    margin-top:15px;
+}
+.course {
+    border:1px solid #ededed;
+    padding:20px;
+    margin-bottom:21px;
+}
+.course ul {
+    list-style:none;
+    margin-left:20px;
+}
+.course li {
+    font-weight:bold;
+}
+.course .course-description {
+    margin-bottom:0;
+    padding-bottom:0
+}
+.accordion-item-content-btn {
+    margin-top:15px;
+}
+.prereq {
+    position:relative;
+    display:inline-block;
+    font-weight:bold;
+}
+.prereq-details p:last-of-type {
+   margin-bottom:0;
+}
+
+
+@media (max-width: 768px) {
+[class*="container-style-basic-block"].container-style-basic-block-one-column .content-block table td
+    .content-block table td, .content-block table th {
+    padding:10px;
+}
+.tier-header.tier-fourth .tier-header-title-wrapper {
+
+}
+.tier-header.tier-fourth .tier-header-title {
+    font-size:30px;
+}
+.tier-header.tier-header.tier-fourth .breadcrumb {
+    display:none;
+    visibility:hidden;
+}
+.course ul {
+    padding-left:0;
+}
+}
